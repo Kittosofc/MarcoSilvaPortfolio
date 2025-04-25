@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Site Pessoal</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function boasVindas() {
+      alert("Bem-vindo ao meu site pessoal!");
+    }
+
+    function calcular() {
+      const a = parseFloat(document.getElementById('num1').value);
+      const b = parseFloat(document.getElementById('num2').value);
+      const resultado = a + b;
+      document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
+    }
+  </script>
+</head>
+<body onload="boasVindas()">
+
+  <h1>Bem-vindo ao meu site pessoal!</h1>
+
+  <section>
+    <h2>Minha Foto</h2>
+    <img src="minha_foto.jpg" alt="Minha Foto" width="200">
+  </section>
+
+  <section>
+    <h2>Descrição</h2>
+    <p>Olá! Eu sou um estudante dedicado, curioso e apaixonado por tecnologia. Aqui você encontrará meu portfólio de estudos.</p>
+  </section>
+
+  <section>
+    <h2>Meu Vídeo Favorito</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2>Tabela de Informações</h2>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Curso</th>
+      </tr>
+      <tr>
+        <td>João</td>
+        <td>22</td>
+        <td>Engenharia</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Calculadora Simples</h2>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <button onclick="calcular()">Somar</button>
+    <p id="resultado">Resultado:</p>
+  </section>
+
+  <section>
+    <h2>Formulário de Contato</h2>
+    <form onsubmit="alert('Mensagem enviada!'); return false;">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Portfólio</h2>
+    <ul>
+      <li><a href="html/index.html" target="_blank">Exercícios de HTML</a></li>
+      <li><a href="css/index.html" target="_blank">Exercícios de CSS</a></li>
+      <li><a href="calculator/index.html" target="_blank">Calculadora</a></li>
+      <li><a href="php/index.php" target="_blank">Exercícios de PHP</a></li>
+    </ul>
+  </section>
+
+</body>
+</html>
